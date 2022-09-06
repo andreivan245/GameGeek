@@ -1,0 +1,51 @@
+.cabecalho {
+  align-items: center;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  height: 115px;
+}
+.cabecalho__direita {
+  display: flex;
+  align-items: center;
+}
+.cabecalho__logo {
+  height: 50px;
+  width: 176px;
+  margin-right: 1em;
+}
+
+.cabecalho__pesquisa {
+  align-items: center;
+  background: #f5f5f5;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  padding: 0 1.4em;
+  width: 393px;
+}
+
+.cabecalho__pesquisa_barra {
+  background: #f5f5f5;
+  border-style: none;
+  outline: 0;
+  width: 353px;
+}
+
+.cabecalho__pesquisa_barra:hover {
+  outline: 0;
+}
+
+.cabecalho__pesquisa_img {
+  height: 17px;
+  width: 17px;
+}
+
+.cabecalho__login_btn {
+  color: #2a7ae4;
+  background: none;
+  border: 1px solid #2a7ae4;
+  height: 51px;
+  width: 182px;
+}
