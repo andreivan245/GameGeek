@@ -1,3 +1,60 @@
+.produtos {
+  background: #e5e5e5;
+  padding-bottom: 64px;
+}
+.produtos__titulo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 32px;
+  margin: 64px 0 16px 0;
+  padding: 0 4%;
+}
+
+.produtos__titulo_texto {
+  margin: 0;
+}
+
 .produtos__galeria_lista {
-    list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 4%;
+}
+
+.produtos__galeria_item {
+  height: 252px;
+  width: 176px;
+}
+.produtos__galeria_titulo,
+.produtos__galeria_preco {
+  color: #464646;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 8px 0;
+}
+
+.produtos__galeria_preco {
+  font-weight: 700;
+}
+
+.produtos__galeria_link {
+  color: #2a7ae4;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 8px 0;
+  text-decoration: none;
+}
+
+.produtos__vertudo {
+  color: #2a7ae4;
+  display: flex;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.produtos__vertudo_seta {
+  padding-left: 12px;
 }

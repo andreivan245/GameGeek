@@ -2,8 +2,9 @@
   align-items: center;
   background: #ffffff;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 115px;
+  padding: 0 4%;
 }
 .cabecalho__direita {
   display: flex;

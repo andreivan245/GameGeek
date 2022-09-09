@@ -7,14 +7,13 @@
 }
 
 .banner__conteudo {
-    padding: 2% 13.5%;
+    padding: 2% 4%;
     width: 1136px;
 }
 
 .banner__conteudo_titulo {
   color: #ffffff;
   font-size: 52px;
-  
   margin: 0;
 }
 
