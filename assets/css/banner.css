@@ -1,5 +1,5 @@
 .banner {
-  background: url(/assets/img/banner-image.png);
+  background: url(../img/banner-image.png);
   background-size: cover;
   display: flex;
   align-items: flex-end;
