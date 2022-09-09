@@ -1,0 +1,47 @@
+main {
+    background: #E5E5E5;
+}
+.login {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 291px;
+    margin: 92px 0;
+    
+    
+}
+
+.login__texto {
+    color: #464646;
+    font-weight: 700;
+    font-size: 18px
+}
+
+.login__email, .login__senha{
+    background: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    border-bottom: 1px solid #C8C8C8;
+    font-weight: 400;
+    font-size: 16px;
+    height: 63px;
+    padding-left: 1em;
+    width: 423px;
+}
+
+.login__btn {
+    background: #2A7AE4;
+    border: none;
+    height: 62px;
+    width: 441px;
+    padding: 0;
+}
+
+.login__botao {
+
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+}
