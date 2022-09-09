@@ -27,7 +27,11 @@
 .banner__conteudo_btn {
   background: #2a7ae4;
   border-style: none;
-  color: #ffffff;
   height: 51px;
   width: 130px;
+}
+
+.banner__conteudo_botao {
+  color: #ffffff;
+  text-decoration: none;
 }

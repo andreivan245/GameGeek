@@ -85,13 +85,14 @@
   width: 530px;
 }
 
-.footer__faleconosco_botao {
+.footer__faleconosco_btn {
   background: #2a7ae4;
   border: none;
-  color: #ffffff;
+
   height: 51px;
   width: 165px;
 }
+
 .rodape {
   align-items: center;
   background: #ffffff;
@@ -105,4 +106,9 @@
   font-size: 16px;
   font-weight: 500;
   margin: 0;
+}
+
+.footer__faleconosco_botao {
+  color: #ffffff;
+  text-decoration: none;
 }

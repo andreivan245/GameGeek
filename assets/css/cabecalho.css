@@ -44,9 +44,13 @@
 }
 
 .cabecalho__login_btn {
-  color: #2a7ae4;
   background: none;
   border: 1px solid #2a7ae4;
   height: 51px;
   width: 182px;
+}
+
+.cabecalho__login_botao {
+  color: #2a7ae4;
+  text-decoration: none;
 }
