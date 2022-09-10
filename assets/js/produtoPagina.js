@@ -10,7 +10,7 @@ const guardaImg = (evento) => {
     localStorage.setItem("nome", nome);
     
     console.log(nome)
-    window.location.href = "./assets/pages/produto.html";
+    window.location.reload(true);
 }
 
 let link = document.querySelectorAll('.produtos__galeria_link')

@@ -27,6 +27,11 @@
   height: 252px;
   width: 176px;
 }
+.produtos__galeria_img{
+  width: 176px;
+  height: 174px;
+}
+
 .produtos__galeria_titulo,
 .produtos__galeria_preco {
   color: #464646;
