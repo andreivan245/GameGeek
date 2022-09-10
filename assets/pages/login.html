@@ -10,43 +10,49 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&amp;display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/assets/css/normalize.css">
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="stylesheet" href="/assets/css/cabecalho.css">
-    <link rel="stylesheet" href="/assets/css/banner.css">
-    <link rel="stylesheet" href="/assets/css/produtos.css">
-    <link rel="stylesheet" href="/assets/css/footer.css">
-    <link rel="stylesheet" href="/assets/css/login.css">
-    
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/cabecalho.css">
+    <link rel="stylesheet" href="../css/banner.css">
+    <link rel="stylesheet" href="../css/produtos.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/login.css">
+
 </head>
 
 <body>
     <header>
         <div class="cabecalho">
             <div class="cabecalho__direita">
-                <a href="/index.html"><img class="cabecalho__logo" src="/assets/img/Logo.png" alt="logo da alurageek"></a>
+                <a href="../../index.html"><img class="cabecalho__logo" src="../img/Logo.png"
+                        alt="logo da alurageek"></a>
                 <div class="cabecalho__pesquisa">
                     <input type="text" class="cabecalho__pesquisa_barra" placeholder="O que deseja encontrar?">
-                    <img src="/assets/img/Lupa.png" alt="" class="cabecalho__pesquisa_img">
+                    <img src="../img/Lupa.png" alt="" class="cabecalho__pesquisa_img">
                 </div>
             </div>
 
-           
+
 
         </div>
     </header>
 
     <main>
-        
+        <div class="login">
+            <div class="login__texto">Iniciar sessão</div>
+            <input type="email" class="login__email" placeholder="Escreva seu email">
+            <input type="password" class="login__senha" placeholder="Escreva sua senha">
+            <button class="login__btn"><a href="" class="login__botao">Enviar</a></button>
+        </div>
     </main>
 
-     
+
 
     <footer>
         <div class="footer">
             <div class="footer__conteudo">
 
-                <a href="/index.html"><img src="/assets/img/Logo.png" alt="" class="footer__img"></a>
+                <a href="../../index.html"><img src="../img/Logo.png" alt="" class="footer__img"></a>
                 <ul class="footer__lista">
                     <li class="footer__lista_item"><a href="" class="footer__lista_item_link">Quem somos nós</a></li>
                     <li class="footer__lista_item"><a href="" class="footer__lista_item_link">Política de
@@ -70,11 +76,12 @@
                         <input type="text" class="footer__faleconosco_msg_input">
 
                     </div>
-                    <button class="footer__faleconosco_btn"><a href="" class="footer__faleconosco_botao">Enviar Mensagem</a></button>
+                    <button class="footer__faleconosco_btn"><a href="" class="footer__faleconosco_botao">Enviar
+                            Mensagem</a></button>
                 </div>
             </div>
         </div>
-        
+
         <div class="rodape">
             <h2 class="rodape__creditos">Desenvolvido por André Castro</h2>
             <h3 class="rodape__creditos">2022</h3>
@@ -83,4 +90,5 @@
 
 </body>
 <script type="text/javascript" src="/assets/js/main.js"></script>
+
 </html>
