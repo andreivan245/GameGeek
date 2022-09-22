@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -13,15 +13,12 @@
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/cabecalho.css">
-    <link rel="stylesheet" href="../css/banner.css">
-    <link rel="stylesheet" href="../css/produtos.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/produto.css">
-    
+    <link rel="stylesheet" href="../css/adiciona.css">
 
 </head>
 
-<body onload="recarregaPagina ()">
+<body>
     <header>
         <div class="cabecalho">
             <div class="cabecalho__direita">
@@ -39,58 +36,42 @@
     </header>
 
     <main>
-        <div class="produto">
+        <section class="adiciona">
             
-            
-            
-        </div>
-        <div class="produtos__titulo">
-            <h2 class="produtos__titulo_texto_produto">Produtos Similares</h2>
-            <a href="" class="produtos__vertudo">Ver tudo <img src="../img/seta.png" alt=""
-                    class="produtos__vertudo_seta"></a>
-        </div>
-        <div class="produtos__galeria">
-            <ul class="produtos__galeria_lista">
-                <li class="produtos__galeria_item">
-                    <img src="../img/produtos/starwars1.png" alt="" class="produtos__galeria_img">
-                    <h3 class="produtos__galeria_titulo">Produto XYZ</h3>
-                    <h4 class="produtos__galeria_preco">R$ 60,00</h4>
-                    <a href="../pages/produto.html" class="produtos__galeria_link">Ver produto</a>
-                </li>
-                <li class="produtos__galeria_item">
-                    <img src="../img/produtos/starwars2.png" alt="" class="produtos__galeria_img">
-                    <h3 class="produtos__galeria_titulo">Produto XYZ</h3>
-                    <h4 class="produtos__galeria_preco">R$ 60,00</h4>
-                    <a href="./produto.html" class="produtos__galeria_link" )">Ver produto</a>
-                </li>
-                <li class="produtos__galeria_item">
-                    <img src="../img/produtos/starwars3.png" alt="" class="produtos__galeria_img">
-                    <h3 class="produtos__galeria_titulo">Produto XYZ</h3>
-                    <h4 class="produtos__galeria_preco">R$ 60,00</h4>
-                    <a href="" class="produtos__galeria_link">Ver produto</a>
-                </li>
-                <li class="produtos__galeria_item">
-                    <img src="../img/produtos/starwars4.png" alt="" class="produtos__galeria_img">
-                    <h3 class="produtos__galeria_titulo">Produto XYZ</h3>
-                    <h4 class="produtos__galeria_preco">R$ 60,00</h4>
-                    <a href="" class="produtos__galeria_link">Ver produto</a>
-                </li>
-                <li class="produtos__galeria_item">
-                    <img src="../img/produtos/starwars5.png" alt="" class="produtos__galeria_img">
-                    <h3 class="produtos__galeria_titulo">Produto XYZ</h3>
-                    <h4 class="produtos__galeria_preco">R$ 60,00</h4>
-                    <a href="" class="produtos__galeria_link">Ver produto</a>
-                </li>
-                <li class="produtos__galeria_item">
-                    <img src="../img/produtos/starwars6.png" alt="" class="produtos__galeria_img">
-                    <h3 class="produtos__galeria_titulo">Produto XYZ</h3>
-                    <h4 class="produtos__galeria_preco">R$ 60,00</h4>
-                    <a href="" class="produtos__galeria_link">Ver produto</a>
-                </li>
-            </ul>
-        </div>
+            <div class="adiciona__conteudo">
+                <h2 class="adiciona__conteudo_titulo">Adicionar novo produto</h2>
+                <div class="adiciona__conteudo_input">
+                    <div id="adiciona__conteudo_drop">
+                        <img src="../img/vetor-imagem.png" alt="" class="adiciona__conteudo_drop_imagem">
+                        <h3 class="adiciona__conteudo_drop_texto">Arraste para adicionar uma imagem para o produto</h3>
+                     </div>
+                        <p class="adiciona__conteudo_drop_ou">Ou</p>
+                        <label for="fileInput" class="adiciona__conteudo_drop_label">Procure no seu computador</label>
+                       <input type="file" id="fileInput"/>
+                </div>  
 
-    </main> 
+                <div class="adiciona__conteudo_nome">
+                    <label class="adiciona__conteudo_nome_titulo" for="adiciona__conteudo_nome_input">Nome do Produto</label>
+                    <input type="text" class="adiciona__conteudo_nome_input">
+                </div>
+
+                <div class="adiciona__conteudo_preco">
+                    <label class="adiciona__conteudo_preco_titulo" for="adiciona__conteudo_preco_input">Preço do Produto</label>
+                    <input type="text" class="adiciona__conteudo_preco_input">
+                </div>
+
+                <div class="adiciona__conteudo_textoDescricao">
+                    <label class="adiciona__conteudo_textoDescricao_titulo" for="adiciona__conteudo_textoDescricao_input">Descrição do produto</label>
+                    <textarea class="adiciona__conteudo_textoDescricao_input"></textarea>
+                </div>
+                
+                <button class="adiciona__conteudo_botao">Adicionar produto</button>
+                
+                
+            </div>
+        </section>
+        
+    </main>
 
 
 
@@ -135,8 +116,6 @@
     </footer>
 
 </body>
-
-<script type="text/javascript" src="../js/produtoPagina.js"></script>
-<script type="text/javascript" src="../js/retornaImg.js"></script>
-
+<script type="text/javascript" src="/assets/js/main.js"></script>
+<script type="text/javascript" src="/assets/js/arrastaeSolta.js"></script>
 </html>

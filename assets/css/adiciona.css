@@ -1,0 +1,136 @@
+main {
+  background: #E5E5E5;
+  
+}
+
+.adiciona {
+  display: flex;
+  justify-content: center;
+  margin: 92px;
+}
+
+.adiciona__conteudo {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 1100px;
+}
+
+.adiciona__conteudo_titulo {
+  margin: 0;
+  padding: 0;
+  width: 560px;
+}
+
+.adiciona__conteudo_input {
+  align-items: center;
+  display: flex;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  width: 560px;
+}
+
+#adiciona__conteudo_drop {
+  align-items: center;
+  background: #ffffff;
+  border: 2px dashed #a2a2a2;
+  display: flex;
+  flex-direction: column;
+  height: 160px;
+  justify-content: center;
+  margin: 0 2.5% 0 0;
+  padding: 0;
+  width: 45%;
+}
+
+.adiciona__conteudo_drop_imagem {
+  height: 50px;
+  width: 50px;
+}
+
+.adiciona__conteudo_drop_texto {
+  color: #a2a2a2;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+
+#fileInput {
+    display: none;
+}
+
+.adiciona__conteudo_drop_label {
+    align-items: center;
+    border: 1px solid #2A7AE4;
+    color: #2A7AE4;
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
+    height: 50px;
+    justify-content: center;
+    margin: 0 0 0 2.5%;
+    width: 45%;
+}
+
+.adiciona__conteudo_nome,.adiciona__conteudo_preco {
+  background: #ffffff;
+  border-bottom: 2px solid #C8C8C8;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  height: 56px;
+  margin-bottom: 16px;
+  width: 560px;
+}
+
+.adiciona__conteudo_nome_titulo,.adiciona__conteudo_preco_titulo {
+  color: #a2a2a2;
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0.8em 0 0.5em 1em;
+}
+
+.adiciona__conteudo_nome_input,.adiciona__conteudo_preco_input {
+  border: none;
+  font-size: 16px;
+  margin: 0 0 1em 0.7em;
+  outline: 0;
+  width: 530px;
+}
+
+.adiciona__conteudo_textoDescricao {
+  background: #ffffff;
+  border-bottom: 2px solid #C8C8C8;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  height: 126px;
+  margin-bottom: 16px;
+  width: 560px;
+}
+
+.adiciona__conteudo_textoDescricao_titulo{
+  color: #a2a2a2;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 1em 0 0.5em 0.8em;
+}
+
+.adiciona__conteudo_textoDescricao_input {
+  border: none;
+  font-size: 16px;
+  margin: 0 0 1em 0.7em;
+  outline: 0;
+  resize: none;
+  height: 80px;
+  width: 530px;
+}
+
+.adiciona__conteudo_botao {
+  background: #2A7AE4;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  height: 56px;
+  width: 560px;
+}
