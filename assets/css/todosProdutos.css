@@ -40,3 +40,61 @@ main {
 .todosProdutos__conteudo_produtos {
     width: 1100px;
 }
+
+.todosProdutos__conteudo_produtos_lista {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+
+}
+
+.todosProdutos__conteudo_produtos_item {
+    width: 176px;
+    height: 249px;
+}
+
+.todosProdutos__conteudo_produtos_itemImg {
+    width: 176px;
+    height: 174px;
+    background-image: url("../img/produtos/starwars1.png");
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.todosProdutos__conteudo_produtos_itemTitulo {
+    color: #464646;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 8px 0;
+}
+
+.todosProdutos__conteudo_produtos_itemPreco {
+    color: #464646;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 8px 0;
+}
+
+.todosProdutos__conteudo_produtos_itemDescricao {
+    color: #464646;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.todosProdutos__conteudo_produtos_itemImgLixeira {
+    height: 18px;
+    margin-top: 11px;
+    margin-right: 24px;
+    width: 14px;
+}
+
+.todosProdutos__conteudo_produtos_itemImgLapis{
+    height: 18px;
+    margin-top: 11px;
+    margin-right: 11px;
+    width: 18px;
+}

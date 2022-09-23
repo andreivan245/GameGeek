@@ -18,7 +18,7 @@
 
 </head>
 
-<body>
+<body onload="chamaProdutos()">
     <header>
         <div class="cabecalho">
             <div class="cabecalho__direita">
@@ -30,7 +30,7 @@
                 </div>
             </div>
 
-
+            
 
         </div>
     </header>
@@ -43,7 +43,9 @@
                     <button class="todosProdutos__conteudo_botao"><a href="./adicionaProduto.html" class="todosProdutos__conteudo_botaoLink">Adicionar produto</a></button>
                 </div>
                 <div class="todosProdutos__conteudo_produtos">
-                    aa
+                    <ul class="todosProdutos__conteudo_produtos_lista">
+                        
+                    </ul>
                 </div>
             </div>
             
@@ -95,5 +97,6 @@
 
 </body>
 <script type="text/javascript" src="/assets/js/main.js"></script>
-<script type="text/javascript" src="/assets/js/arrastaeSolta.js"></script>
+<script type="text/javascript" src="/assets/js/carregarProdutos.js"></script>
+
 </html>
