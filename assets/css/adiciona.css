@@ -98,6 +98,36 @@ main {
   width: 530px;
 }
 
+.adiciona__conteudo_categoria {
+  background: #ffffff;
+  border-bottom: 2px solid #C8C8C8;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  height: 70px;
+  margin-bottom: 16px;
+  width: 560px;
+}
+
+.adiciona__conteudo_categoriaSelect_titulo{
+  color: #a2a2a2;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 1em 0 0em 0.8em;
+  
+}
+
+#adiciona__conteudo_categoriaSelect{
+  margin: 0.5em 0 0 0.5em;
+  border: 0;
+  width: 540px;
+}
+
+#adiciona__conteudo_categoriaSelect:focus{
+  outline: none;
+}
+
+
 .adiciona__conteudo_textoDescricao {
   background: #ffffff;
   border-bottom: 2px solid #C8C8C8;

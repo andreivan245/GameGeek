@@ -11,16 +11,32 @@
   padding: 0 4%;
 }
 
+.produtos__tituloNovos {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 32px;
+  margin: 64px 0 16px 0;
+  padding: 0 4%;
+  
+}
+
 .produtos__titulo_texto {
   margin: 0;
 }
 
-.produtos__galeria_lista {
+.produtos__galeriaNovos {
+  display: none;
+}
+
+.produtos__galeria_listaStarWars,.produtos__galeria_listaConsoles, .produtos__galeria_listaDiversos, .produtos__galeria_listaNovos{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   list-style-type: none;
   margin: 0;
   padding: 0 4%;
+  
 }
 
 .produtos__galeria_item {

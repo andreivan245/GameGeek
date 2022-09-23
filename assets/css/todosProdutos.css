@@ -21,6 +21,8 @@ main {
     font-size: 32px;
     font-weight: 700;
     margin: 0;
+    display: flex;
+    align-self: center;
 }
 
 .todosProdutos__conteudo_botao {
@@ -43,6 +45,7 @@ main {
 
 .todosProdutos__conteudo_produtos_lista {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     list-style-type: none;
     padding: 0;
@@ -50,14 +53,16 @@ main {
 }
 
 .todosProdutos__conteudo_produtos_item {
+    
     width: 176px;
+    padding: 2em 0 0 0;
     height: 249px;
 }
 
 .todosProdutos__conteudo_produtos_itemImg {
     width: 176px;
     height: 174px;
-    background-image: url("../img/produtos/starwars1.png");
+   
     background-size: cover;
     display: flex;
     justify-content: flex-end;
@@ -80,6 +85,11 @@ main {
 
 .todosProdutos__conteudo_produtos_itemDescricao {
     color: #464646;
+    max-width: 176px;
+    height: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     font-size: 14px;
     font-weight: 500;
     margin: 0;
