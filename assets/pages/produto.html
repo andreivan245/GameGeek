@@ -17,11 +17,11 @@
     <link rel="stylesheet" href="../css/produtos.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/produto.css">
-    
+
 
 </head>
 
-<body onload="recarregaPagina ()">
+<body onload="listaProdutos(),produtoSelecionado('produto'),produtoVitrine() ">
     <header>
         <div class="cabecalho">
             <div class="cabecalho__direita">
@@ -40,57 +40,22 @@
 
     <main>
         <div class="produto">
-            
-            
-            
+
+
+
         </div>
         <div class="produtos__titulo">
             <h2 class="produtos__titulo_texto_produto">Produtos Similares</h2>
-            <a href="" class="produtos__vertudo">Ver tudo <img src="../img/seta.png" alt=""
+            <a href="./todosProdutos.html" class="produtos__vertudo">Ver tudo <img src="../img/seta.png" alt=""
                     class="produtos__vertudo_seta"></a>
         </div>
         <div class="produtos__galeria">
             <ul class="produtos__galeria_listaDiversos">
-                <li class="produtos__galeria_item">
-                    <img src="../img/produtos/starwars1.png" alt="" class="produtos__galeria_img">
-                    <h3 class="produtos__galeria_titulo">Produto XYZ</h3>
-                    <h4 class="produtos__galeria_preco">R$ 60,00</h4>
-                    <a href="../pages/produto.html" class="produtos__galeria_link">Ver produto</a>
-                </li>
-                <li class="produtos__galeria_item">
-                    <img src="../img/produtos/starwars2.png" alt="" class="produtos__galeria_img">
-                    <h3 class="produtos__galeria_titulo">Produto XYZ</h3>
-                    <h4 class="produtos__galeria_preco">R$ 60,00</h4>
-                    <a href="./produto.html" class="produtos__galeria_link" )">Ver produto</a>
-                </li>
-                <li class="produtos__galeria_item">
-                    <img src="../img/produtos/starwars3.png" alt="" class="produtos__galeria_img">
-                    <h3 class="produtos__galeria_titulo">Produto XYZ</h3>
-                    <h4 class="produtos__galeria_preco">R$ 60,00</h4>
-                    <a href="" class="produtos__galeria_link">Ver produto</a>
-                </li>
-                <li class="produtos__galeria_item">
-                    <img src="../img/produtos/starwars4.png" alt="" class="produtos__galeria_img">
-                    <h3 class="produtos__galeria_titulo">Produto XYZ</h3>
-                    <h4 class="produtos__galeria_preco">R$ 60,00</h4>
-                    <a href="" class="produtos__galeria_link">Ver produto</a>
-                </li>
-                <li class="produtos__galeria_item">
-                    <img src="../img/produtos/starwars5.png" alt="" class="produtos__galeria_img">
-                    <h3 class="produtos__galeria_titulo">Produto XYZ</h3>
-                    <h4 class="produtos__galeria_preco">R$ 60,00</h4>
-                    <a href="" class="produtos__galeria_link">Ver produto</a>
-                </li>
-                <li class="produtos__galeria_item">
-                    <img src="../img/produtos/starwars6.png" alt="" class="produtos__galeria_img">
-                    <h3 class="produtos__galeria_titulo">Produto XYZ</h3>
-                    <h4 class="produtos__galeria_preco">R$ 60,00</h4>
-                    <a href="" class="produtos__galeria_link">Ver produto</a>
-                </li>
+
             </ul>
         </div>
 
-    </main> 
+    </main>
 
 
 
@@ -136,7 +101,8 @@
 
 </body>
 
-<script type="text/javascript" src="../js/produtoPagina.js"></script>
-<script type="text/javascript" src="../js/retornaImg.js"></script>
+<script type="text/javascript" src="../js/enviaProdutoPagina.js"></script>
+<script type="text/javascript" src="../js/listaProdutos.js"></script>
+
 
 </html>

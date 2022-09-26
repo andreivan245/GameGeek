@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -14,11 +14,11 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/cabecalho.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/todosProdutos.css">
+    <link rel="stylesheet" href="../css/adiciona.css">
 
 </head>
 
-<body onload="chamaProdutos(), apagaProduto(), editaProduto()">
+<body onload="editandoProduto()">
     <header>
         <div class="cabecalho">
             <div class="cabecalho__direita">
@@ -36,20 +36,48 @@
     </header>
 
     <main>
-        <section class="todosProdutos">
-            <div class="todosProdutos__conteudo">
-                <div class="todosProdutos__conteudo_topo">
-                    <h2 class="todosProdutos__conteudo_titulo">Todos os produtos</h2>
-                    <button class="todosProdutos__conteudo_botao"><a href="./adicionaProduto.html"
-                            class="todosProdutos__conteudo_botaoLink">Adicionar produto</a></button>
-                </div>
-                <div class="todosProdutos__conteudo_produtos">
-                    <ul class="todosProdutos__conteudo_produtos_lista">
+        <section class="adiciona">
 
-                    </ul>
+            <div class="adiciona__conteudo">
+                <h2 class="adiciona__conteudo_titulo">Editar produto</h2>
+                <div class="adiciona__conteudo_input">
+                    <img src="" alt="" class="Produto__conteudo_img">
                 </div>
+
+                <div class="adiciona__conteudo_nome">
+                    <label class="adiciona__conteudo_nome_titulo" for="adiciona__conteudo_nome_input">Nome do
+                        Produto</label>
+                    <input type="text" class="adiciona__conteudo_nome_input">
+                </div>
+
+                <div class="adiciona__conteudo_preco">
+                    <label class="adiciona__conteudo_preco_titulo" for="adiciona__conteudo_preco_input">Preço do
+                        Produto</label>
+                    <input type="text" class="adiciona__conteudo_preco_input">
+                </div>
+
+                <div class="adiciona__conteudo_categoria">
+                    <label class="adiciona__conteudo_categoriaSelect_titulo" for="Categoria">Categoria do
+                        Produto</label>
+                    <select name="categoria" id="adiciona__conteudo_categoriaSelect">
+                        <option value="Star Wars">Star Wars</option>
+                        <option value="Console">Console</option>
+                        <option value="Diversos">Diversos</option>
+                        <option value="Novos Produtos">Novos Produtos</option>
+                    </select>
+                </div>
+
+
+                <div class="adiciona__conteudo_textoDescricao">
+                    <label class="adiciona__conteudo_textoDescricao_titulo"
+                        for="adiciona__conteudo_textoDescricao_input">Descrição do produto</label>
+                    <textarea class="adiciona__conteudo_textoDescricao_input"></textarea>
+                </div>
+
+                <button id="adiciona__conteudo_botao" class="adiciona__conteudo_botao">Editar produto</button>
+
+
             </div>
-
         </section>
 
     </main>
@@ -97,9 +125,8 @@
     </footer>
 
 </body>
-<script type="text/javascript" src="../js/main.js"></script>
-<script type="text/javascript" src="../js/carregarProdutos.js"></script>
-<script type="text/javascript" src="../js/apagaProduto.js"></script>
+
+
 <script type="text/javascript" src="../js/editaProduto.js"></script>
 
 </html>

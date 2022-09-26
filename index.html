@@ -16,10 +16,10 @@
     <link rel="stylesheet" href="./assets/css/banner.css">
     <link rel="stylesheet" href="./assets/css/produtos.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
-
+      
 </head>
 
-<body>
+<body onload="listaProdutos(),chamaProdutosIndex(), produtoSelecionado('index')" >
     <header>
         <div class="cabecalho">
             <div class="cabecalho__direita">
@@ -43,7 +43,7 @@
             <div class="banner__conteudo">
                 <h2 class="banner__conteudo_titulo">Dezembro Promocional</h2>
                 <h3 class="banner__conteudo_subtitulo">Produtos selecionados com 33% de desconto</h3>
-                <button class="banner__conteudo_btn"><a href="" class="banner__conteudo_botao">Ver Consoles</a></button>
+                <button class="banner__conteudo_btn"><a href="#console" class="banner__conteudo_botao">Ver Consoles</a></button>
             </div>
 
         </div>
@@ -56,88 +56,18 @@
             </div>
             <div class="produtos__galeria">
                 <ul class="produtos__galeria_listaStarWars">
-                    <li class="produtos__galeria_item">
-                        <img src="./assets/img/produtos/starwars1.png" alt="" class="produtos__galeria_img">
-                        <h3 class="produtos__galeria_titulo">Produto XYZ</h3>
-                        <h4 class="produtos__galeria_preco">R$ 60,00</h4>
-                        <a href="./assets/pages/produto.html" class="produtos__galeria_link">Ver produto</a>
-                    </li>
-                    <li class="produtos__galeria_item">
-                        <img src="./assets/img/produtos/starwars2.png" alt="" class="produtos__galeria_img">
-                        <h3 class="produtos__galeria_titulo">Produto XYZ</h3>
-                        <h4 class="produtos__galeria_preco">R$ 60,00</h4>
-                        <a href="./assets/pages/produto.html" class="produtos__galeria_link" )">Ver produto</a>
-                    </li>
-                    <li class="produtos__galeria_item">
-                        <img src="./assets/img/produtos/starwars3.png" alt="" class="produtos__galeria_img">
-                        <h3 class="produtos__galeria_titulo">Produto XYZ</h3>
-                        <h4 class="produtos__galeria_preco">R$ 60,00</h4>
-                        <a href="" class="produtos__galeria_link">Ver produto</a>
-                    </li>
-                    <li class="produtos__galeria_item">
-                        <img src="./assets/img/produtos/starwars4.png" alt="" class="produtos__galeria_img">
-                        <h3 class="produtos__galeria_titulo">Produto XYZ</h3>
-                        <h4 class="produtos__galeria_preco">R$ 60,00</h4>
-                        <a href="" class="produtos__galeria_link">Ver produto</a>
-                    </li>
-                    <li class="produtos__galeria_item">
-                        <img src="./assets/img/produtos/starwars5.png" alt="" class="produtos__galeria_img">
-                        <h3 class="produtos__galeria_titulo">Produto XYZ</h3>
-                        <h4 class="produtos__galeria_preco">R$ 60,00</h4>
-                        <a href="" class="produtos__galeria_link">Ver produto</a>
-                    </li>
-                    <li class="produtos__galeria_item">
-                        <img src="./assets/img/produtos/starwars6.png" alt="" class="produtos__galeria_img">
-                        <h3 class="produtos__galeria_titulo">Produto XYZ</h3>
-                        <h4 class="produtos__galeria_preco">R$ 60,00</h4>
-                        <a href="" class="produtos__galeria_link">Ver produto</a>
-                    </li>
+                   
                 </ul>
             </div>
 
             <div class="produtos__titulo">
-                <h2 class="produtos__titulo_texto">Console</h2>
+                <h2 class="produtos__titulo_texto" id="console">Console</h2>
                 <a href="./assets/pages/todosProdutos.html" class="produtos__vertudo">Ver tudo <img src="./assets/img/seta.png" alt=""
                         class="produtos__vertudo_seta"></a>
             </div>
             <div class="produtos__galeria">
                 <ul class="produtos__galeria_listaConsoles">
-                    <li class="produtos__galeria_item">
-                        <img src="./assets/img/produtos/console1.png" alt="" class="produtos__galeria_img">
-                        <h3 class="produtos__galeria_titulo">Controle XYZ</h3>
-                        <h4 class="produtos__galeria_preco">R$ 60,00</h4>
-                        <a href="" class="produtos__galeria_link">Ver produto</a>
-                    </li>
-                    <li class="produtos__galeria_item">
-                        <img src="./assets/img/produtos/console2.png" alt="" class="produtos__galeria_img">
-                        <h3 class="produtos__galeria_titulo">Controle e console XYZ</h3>
-                        <h4 class="produtos__galeria_preco">R$ 60,00</h4>
-                        <a href="" class="produtos__galeria_link">Ver produto</a>
-                    </li>
-                    <li class="produtos__galeria_item">
-                        <img src="./assets/img/produtos/console3.png" alt="" class="produtos__galeria_img">
-                        <h3 class="produtos__galeria_titulo">Console XYZ</h3>
-                        <h4 class="produtos__galeria_preco">R$ 60,00</h4>
-                        <a href="" class="produtos__galeria_link">Ver produto</a>
-                    </li>
-                    <li class="produtos__galeria_item">
-                        <img src="./assets/img/produtos/console4.png" alt="" class="produtos__galeria_img">
-                        <h3 class="produtos__galeria_titulo">Console XYZ</h3>
-                        <h4 class="produtos__galeria_preco">R$ 60,00</h4>
-                        <a href="" class="produtos__galeria_link">Ver produto</a>
-                    </li>
-                    <li class="produtos__galeria_item">
-                        <img src="./assets/img/produtos/console5.png" alt="" class="produtos__galeria_img">
-                        <h3 class="produtos__galeria_titulo">Console XYZ</h3>
-                        <h4 class="produtos__galeria_preco">R$ 60,00</h4>
-                        <a href="" class="produtos__galeria_link">Ver produto</a>
-                    </li>
-                    <li class="produtos__galeria_item">
-                        <img src="./assets/img/produtos/console6.png" alt="" class="produtos__galeria_img">
-                        <h3 class="produtos__galeria_titulo">Game Boy Color XYZ</h3>
-                        <h4 class="produtos__galeria_preco">R$ 60,00</h4>
-                        <a href="" class="produtos__galeria_link">Ver produto</a>
-                    </li>
+                    
                 </ul>
             </div>
 
@@ -148,42 +78,7 @@
             </div>
             <div class="produtos__galeria">
                 <ul class="produtos__galeria_listaDiversos">
-                    <li class="produtos__galeria_item">
-                        <img src="./assets/img/produtos/diversos1.png" alt="" class="produtos__galeria_img">
-                        <h3 class="produtos__galeria_titulo">Camisa Atari</h3>
-                        <h4 class="produtos__galeria_preco">R$ 60,00</h4>
-                        <a href="" class="produtos__galeria_link">Ver produto</a>
-                    </li>
-                    <li class="produtos__galeria_item">
-                        <img src="./assets/img/produtos/diversos2.png" alt="" class="produtos__galeria_img">
-                        <h3 class="produtos__galeria_titulo">Camisa SNES</h3>
-                        <h4 class="produtos__galeria_preco">R$ 60,00</h4>
-                        <a href="" class="produtos__galeria_link">Ver produto</a>
-                    </li>
-                    <li class="produtos__galeria_item">
-                        <img src="./assets/img/produtos/diversos3.png" alt="" class="produtos__galeria_img">
-                        <h3 class="produtos__galeria_titulo">Controle e console XYZ</h3>
-                        <h4 class="produtos__galeria_preco">R$ 60,00</h4>
-                        <a href="" class="produtos__galeria_link">Ver produto</a>
-                    </li>
-                    <li class="produtos__galeria_item">
-                        <img src="./assets/img/produtos/diversos4.png" alt="" class="produtos__galeria_img">
-                        <h3 class="produtos__galeria_titulo">Controle e console XYZ</h3>
-                        <h4 class="produtos__galeria_preco">R$ 60,00</h4>
-                        <a href="" class="produtos__galeria_link">Ver produto</a>
-                    </li>
-                    <li class="produtos__galeria_item">
-                        <img src="./assets/img/produtos/diversos5.png" alt="" class="produtos__galeria_img">
-                        <h3 class="produtos__galeria_titulo">Controle e console XYZ</h3>
-                        <h4 class="produtos__galeria_preco">R$ 60,00</h4>
-                        <a href="" class="produtos__galeria_link">Ver produto</a>
-                    </li>
-                    <li class="produtos__galeria_item">
-                        <img src="./assets/img/produtos/diversos6.png" alt="" class="produtos__galeria_img">
-                        <h3 class="produtos__galeria_titulo">Controle e console XYZZ</h3>
-                        <h4 class="produtos__galeria_preco">R$ 60,00</h4>
-                        <a href="" class="produtos__galeria_link">Ver produto</a>
-                    </li>
+                    
                 </ul>
             </div>
 
@@ -241,9 +136,13 @@
             <h3 class="rodape__creditos">2022</h3>
         </div>
     </footer>
-
+    
 </body>
-<script type="text/javascript" src="./assets/js/main.js"></script>
-<script type="text/javascript" src="./assets/js/carregarProdutosIndex.js"></script>
+
+    <script  type="text/javascript" src="./assets/js/listaProdutos.js"></script>
+    <script  type="text/javascript" src="./assets/js/carregarProdutosIndex.js" ></script>
+    <script  type="text/javascript" src="./assets/js/enviaProdutoPagina.js"></script>
+
+
 
 </html>

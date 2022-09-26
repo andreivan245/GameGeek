@@ -1,110 +1,109 @@
 main {
-    background: #E5E5E5;
+  background: #e5e5e5;
 }
 
 .todosProdutos {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 70.5px 0;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 70.5px 0;
 }
 
 .todosProdutos__conteudo_topo {
-    display: flex;
-    justify-content: space-between;
-    width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  width: 1100px;
 }
 
 .todosProdutos__conteudo_titulo {
-    color: #464646;
-    font-size: 32px;
-    font-weight: 700;
-    margin: 0;
-    display: flex;
-    align-self: center;
+  color: #464646;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+  display: flex;
+  align-self: center;
 }
 
 .todosProdutos__conteudo_botao {
-    background: #2A7AE4;
-    border: none;
-    height: 51px;
-    width: 164px;
+  background: #2a7ae4;
+  border: none;
+  height: 51px;
+  width: 164px;
 }
 
 .todosProdutos__conteudo_botaoLink {
-    color: #FFFFFF;
-    font-size: 16px;
-    font-weight: 400;
-    text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
 }
 
 .todosProdutos__conteudo_produtos {
-    width: 1100px;
+  width: 1100px;
 }
 
 .todosProdutos__conteudo_produtos_lista {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    list-style-type: none;
-    padding: 0;
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
 }
 
 .todosProdutos__conteudo_produtos_item {
-    
-    width: 176px;
-    padding: 2em 0 0 0;
-    height: 249px;
+  width: 176px;
+  padding: 2em 0 0 0;
+  height: 249px;
 }
 
 .todosProdutos__conteudo_produtos_itemImg {
-    width: 176px;
-    height: 174px;
-   
-    background-size: cover;
-    display: flex;
-    justify-content: flex-end;
-    
+  width: 176px;
+  height: 174px;
+
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .todosProdutos__conteudo_produtos_itemTitulo {
-    color: #464646;
-    font-size: 14px;
-    font-weight: 500;
-    margin: 8px 0;
+  color: #464646;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 8px 0;
 }
 
 .todosProdutos__conteudo_produtos_itemPreco {
-    color: #464646;
-    font-size: 16px;
-    font-weight: 700;
-    margin: 8px 0;
+  color: #464646;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 8px 0;
 }
 
 .todosProdutos__conteudo_produtos_itemDescricao {
-    color: #464646;
-    max-width: 176px;
-    height: 14px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    font-size: 14px;
-    font-weight: 500;
-    margin: 0;
+  color: #464646;
+  max-width: 176px;
+  height: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
 }
 
 .todosProdutos__conteudo_produtos_itemImgLixeira {
-    height: 18px;
-    margin-top: 11px;
-    margin-right: 24px;
-    width: 14px;
+  cursor: pointer;
+  height: 18px;
+  margin-top: 11px;
+  margin-right: 24px;
+  width: 14px;
 }
 
-.todosProdutos__conteudo_produtos_itemImgLapis{
-    height: 18px;
-    margin-top: 11px;
-    margin-right: 11px;
-    width: 18px;
+.todosProdutos__conteudo_produtos_itemImgLapis {
+  cursor: pointer;
+  height: 18px;
+  margin-top: 11px;
+  margin-right: 11px;
+  width: 18px;
 }

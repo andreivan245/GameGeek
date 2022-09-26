@@ -18,7 +18,7 @@
 
 </head>
 
-<body>
+<body onload="arrastaSolta(), inputImagem()">
     <header>
         <div class="cabecalho">
             <div class="cabecalho__direita">
@@ -37,51 +37,56 @@
 
     <main>
         <section class="adiciona">
-            
+
             <div class="adiciona__conteudo">
                 <h2 class="adiciona__conteudo_titulo">Adicionar novo produto</h2>
                 <div class="adiciona__conteudo_input">
                     <div id="adiciona__conteudo_drop">
                         <img src="../img/vetor-imagem.png" alt="" class="adiciona__conteudo_drop_imagem">
                         <h3 class="adiciona__conteudo_drop_texto">Arraste para adicionar uma imagem para o produto</h3>
-                     </div>
-                        <p class="adiciona__conteudo_drop_ou">Ou</p>
-                        <label for="fileInput" class="adiciona__conteudo_drop_label">Procure no seu computador</label>
-                       <input type="file" id="fileInput"/>
-                </div>  
+                    </div>
+                    <p class="adiciona__conteudo_drop_ou">Ou</p>
+                    <label for="fileInput" class="adiciona__conteudo_drop_label">Procure no seu dispositivo</label>
+                    <input type="file" id="fileInput" />
+                </div>
 
                 <div class="adiciona__conteudo_nome">
-                    <label class="adiciona__conteudo_nome_titulo" for="adiciona__conteudo_nome_input">Nome do Produto</label>
+                    <label class="adiciona__conteudo_nome_titulo" for="adiciona__conteudo_nome_input">Nome do
+                        Produto</label>
                     <input type="text" class="adiciona__conteudo_nome_input">
                 </div>
 
                 <div class="adiciona__conteudo_preco">
-                    <label class="adiciona__conteudo_preco_titulo" for="adiciona__conteudo_preco_input">Preço do Produto</label>
+                    <label class="adiciona__conteudo_preco_titulo" for="adiciona__conteudo_preco_input">Preço do
+                        Produto</label>
                     <input type="text" class="adiciona__conteudo_preco_input">
                 </div>
 
                 <div class="adiciona__conteudo_categoria">
-                    <label class="adiciona__conteudo_categoriaSelect_titulo" for="Categoria">Categoria do Produto</label>
-                <select name="categoria" id="adiciona__conteudo_categoriaSelect">
-                    <option value="Star Wars">Star Wars</option>
-                    <option value="Console">Console</option>
-                    <option value="Diversos">Diversos</option>
-                    <option value="Novos Produtos">Novos Produtos</option>
-                  </select>
+                    <label class="adiciona__conteudo_categoriaSelect_titulo" for="Categoria">Categoria do
+                        Produto</label>
+                    <select name="categoria" id="adiciona__conteudo_categoriaSelect">
+                        <option value="Star Wars">Star Wars</option>
+                        <option value="Console">Console</option>
+                        <option value="Diversos">Diversos</option>
+                        <option value="Novos Produtos">Novos Produtos</option>
+                    </select>
                 </div>
-                
+
 
                 <div class="adiciona__conteudo_textoDescricao">
-                    <label class="adiciona__conteudo_textoDescricao_titulo" for="adiciona__conteudo_textoDescricao_input">Descrição do produto</label>
+                    <label class="adiciona__conteudo_textoDescricao_titulo"
+                        for="adiciona__conteudo_textoDescricao_input">Descrição do produto</label>
                     <textarea class="adiciona__conteudo_textoDescricao_input"></textarea>
                 </div>
-                
-                <button class="adiciona__conteudo_botao">Adicionar produto</button>
-                
-                
+
+                <button id="adiciona__conteudo_botao" class="adiciona__conteudo_botao" onclick="criaProduto()">Adicionar
+                    produto</button>
+
+
             </div>
         </section>
-        
+
     </main>
 
 
@@ -127,6 +132,8 @@
     </footer>
 
 </body>
-<script type="text/javascript" src="/assets/js/main.js"></script>
-<script type="text/javascript" src="/assets/js/arrastaeSolta.js"></script>
+
+<script type="text/javascript" src="../js/arrastaeSolta.js"></script>
+<script type="text/javascript" src="../js/criaProduto.js"></script>
+
 </html>
