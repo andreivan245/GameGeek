@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: space-between;
   font-size: 32px;
-  margin: 64px 0 0 0;
+  margin: 64px 0 12px 0;
   padding: 0 4%;
 }
 
@@ -34,23 +34,19 @@
 .produtos__galeria_listaNovos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  align-items: center;
   list-style-type: none;
   margin: 0;
   padding: 0 4%;
+  
 }
 
 .produtos__galeria_item {
-  margin: 1em 1em 0 0;
+  margin: 8px 15.25px;
   height: 252px;
   width: 176px;
 }
 
-.produtos__galeria_item:last-child {
-  margin: 1em 0 0 0;
-  height: 252px;
-  width: 176px;
-}
 
 .produtos__galeria_img {
   width: 176px;

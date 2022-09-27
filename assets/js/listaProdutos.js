@@ -157,4 +157,5 @@ function listaProdutos() {
 
   localStorage.setItem("quantidadeProdutos", i);
   localStorage.setItem("NomeSelecionado", "0");
+  
 }
