@@ -35,7 +35,7 @@ input = document.querySelector(".cabecalho__pesquisa_barra");
 filter = input.value.toUpperCase();
 ul = document.querySelector(".cabecalho__pesquisa_listaProdutos")
 li = ul.getElementsByTagName('li');
-
+document.querySelector(".cabecalho__direita_pesquisa").style.borderRadius = "20px"
 // Loop through all list items, and hide those who don't match the search query
 for (i = 0; i < li.length; i++) {
     
@@ -45,7 +45,7 @@ for (i = 0; i < li.length; i++) {
 
   
   
-  if (txtValue.toUpperCase().indexOf(filter) > 0  ) {
+  if (txtValue.toUpperCase().indexOf(filter) > -1 && input.value != "" ) {
     
 
     ul.style.display ="flex"
@@ -61,11 +61,11 @@ for (i = 0; i < li.length; i++) {
     if(input.value == ""){
         document.querySelector(".cabecalho__direita_pesquisa").style.background = "#ffff"
     }
-   
+    
     
     li[i].style.display = "none";
     
   }
-  
+ 
 }
 }
