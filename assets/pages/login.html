@@ -20,18 +20,21 @@
 
 </head>
 
-<body>
+<body onload="listaPesquisa(),produtoPesquisaSelecionado('login')">
     <header>
         <div class="cabecalho">
             <div class="cabecalho__direita">
                 <a href="../../index.html"><img class="cabecalho__logo" src="../img/Logo.png"
-                        alt="logo da alurageek"></a>
-                <div class="cabecalho__pesquisa">
-                    <input type="text" class="cabecalho__pesquisa_barra" placeholder="O que deseja encontrar?">
-                    <img src="../img/Lupa.png" alt="" class="cabecalho__pesquisa_img">
-                </div>
+                    alt="logo da alurageek"></a>
+                    <div class="cabecalho__direita_pesquisa">
+                
+                        <div class="cabecalho__pesquisa">
+                            <input type="text" class="cabecalho__pesquisa_barra" onkeyup="barraPesquisa()" placeholder="O que deseja encontrar?">
+                            <img src="../img/Lupa.png" alt="" class="cabecalho__pesquisa_img">
+                        </div>
+                        
+                    </div>
             </div>
-
 
 
         </div>
@@ -89,6 +92,8 @@
     </footer>
 
 </body>
-<script type="text/javascript" src="/assets/js/main.js"></script>
+
+<script type="text/javascript" src="/assets/js/enviaProdutoPagina.js"></script>
+<script type="text/javascript" src="/assets/js/barraPesquisa.js"></script>
 
 </html>

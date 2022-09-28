@@ -1,5 +1,5 @@
 .banner {
-  background: url(../img/banner-image.png);
+  background: url(../img/banner-image.png) no-repeat center;
   background-size: cover;
   display: flex;
   align-items: flex-end;
@@ -7,8 +7,8 @@
 }
 
 .banner__conteudo {
-    padding: 2% 4%;
-    width: 1136px;
+    padding: 4% 4%;
+    width: 100%;
 }
 
 .banner__conteudo_titulo {
@@ -34,4 +34,32 @@
 .banner__conteudo_botao {
   color: #ffffff;
   text-decoration: none;
+}
+
+
+/*Mobile*/
+@media screen and (max-width: 767px) {
+  .banner{
+    width: 100%;
+    align-items: flex-end
+  }
+
+  .banner__conteudo_titulo {
+    
+    font-size: 22px;
+    
+  }
+  
+  .banner__conteudo_subtitulo {
+    
+    font-size: 14px;
+    
+  }
+
+  .banner__conteudo_btn {
+    
+    width: 119px;
+  }
+
+
 }

@@ -20,6 +20,8 @@ for (i = 0; i < localStorage.length; i++) {
 
     var liListaProdutos = document.createElement("li");
     var aListaProdutos = document.createElement("a");
+    aListaProdutos.classList.add("produtos__pesquisa_link")
+    aListaProdutos.setAttribute("href","")
     var textNodeNome = document.createTextNode(produtoCarregado.nome);
     aListaProdutos.appendChild(textNodeNome)
     liListaProdutos.appendChild(aListaProdutos)

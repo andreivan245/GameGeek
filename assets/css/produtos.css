@@ -16,7 +16,7 @@
   align-items: center;
   justify-content: space-between;
   font-size: 32px;
-  margin: 64px 0 16px 0;
+  margin: 64px 0 12px 0;
   padding: 0 4%;
 }
 
@@ -83,4 +83,21 @@
 
 .produtos__vertudo_seta {
   padding-left: 12px;
+}
+
+/*Mobile*/
+@media screen and (max-width: 767px) {
+  .produtos__galeria_listaStarWars,
+.produtos__galeria_listaConsoles,
+.produtos__galeria_listaDiversos,
+.produtos__galeria_listaNovos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 1%;
+  
+}
 }

@@ -18,16 +18,20 @@
 
 </head>
 
-<body onload="editandoProduto()">
+<body onload="editandoProduto(), listaPesquisa(),produtoPesquisaSelecionado('adicionaProduto')">
     <header>
         <div class="cabecalho">
             <div class="cabecalho__direita">
                 <a href="../../index.html"><img class="cabecalho__logo" src="../img/Logo.png"
-                        alt="logo da alurageek"></a>
-                <div class="cabecalho__pesquisa">
-                    <input type="text" class="cabecalho__pesquisa_barra" placeholder="O que deseja encontrar?">
-                    <img src="../img/Lupa.png" alt="" class="cabecalho__pesquisa_img">
-                </div>
+                    alt="logo da alurageek"></a>
+                    <div class="cabecalho__direita_pesquisa">
+                
+                        <div class="cabecalho__pesquisa">
+                            <input type="text" class="cabecalho__pesquisa_barra" onkeyup="barraPesquisa()" placeholder="O que deseja encontrar?">
+                            <img src="../img/Lupa.png" alt="" class="cabecalho__pesquisa_img">
+                        </div>
+                        
+                    </div>
             </div>
 
 
@@ -128,5 +132,7 @@
 
 
 <script type="text/javascript" src="../js/editaProduto.js"></script>
+<script type="text/javascript" src="../js/barraPesquisa.js"></script>
+<script type="text/javascript" src="../js/enviaProdutoPagina.js"></script>
 
 </html>

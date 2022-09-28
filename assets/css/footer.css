@@ -114,3 +114,26 @@
   color: #ffffff;
   text-decoration: none;
 }
+
+/*Mobile*/
+@media screen and (max-width: 767px) {
+  .footer__conteudo {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 1em 0;
+    height: 100%;
+  }
+
+  .footer__faleconosco,.footer__faleconosco_nome_input,.footer__faleconosco_msg_input {
+
+    width: 92%;
+  }
+
+  .footer__lista_item{
+    margin-bottom: 1em;
+  }
+
+  
+}

@@ -18,6 +18,29 @@ function produtoSelecionado(pagina) {
   }
 }
 
+function produtoPesquisaSelecionado(pagina) {
+  var clicado = document.querySelectorAll(".produtos__pesquisa_link");
+  for (var i = 0; i < clicado.length; i++) {
+    clicado[i].addEventListener("click", function (e) {
+      e.preventDefault();
+      localStorage.setItem(
+        "NomeSelecionado",
+        e.target.textContent
+          
+      );
+
+      if (pagina == "index") {
+        window.location.href = "./assets/pages/produto.html";
+      } 
+      if (pagina == "todosProdutos" || pagina == "login" || pagina == "adicionaProduto" ) {
+        window.location.href = "../pages/produto.html";
+      }else {
+        location.reload(true);
+      }
+    });
+  }
+}
+
 function produtoSimilar(produto) {
   for (i = 0; i < localStorage.length; i++) {
     if (
