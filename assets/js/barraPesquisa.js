@@ -55,13 +55,14 @@ for (i = 0; i < li.length; i++) {
     
     
     document.querySelector(".cabecalho__direita_pesquisa").style.background = "#f5f5f5"
-    document.querySelector(".cabecalho__direita_pesquisa").style.borderRadius = "20px 20px 0 0"
+    document.querySelector(".cabecalho__pesquisa").style.borderRadius = "20px 20px 0 0"
     document.querySelector(".cabecalho__pesquisa_listaProdutos").style.borderRadius = "0 0 20px 20px"
       
   } else {
     
     if(input.value == ""){
         document.querySelector(".cabecalho__direita_pesquisa").style.background = "#ffff"
+        document.querySelector(".cabecalho__pesquisa").style.borderRadius = "20px"
     }
     
     

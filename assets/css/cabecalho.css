@@ -141,3 +141,11 @@
   
 
 }
+
+
+@media screen and (max-width: 420px) {
+  .cabecalho__pesquisa_barra::placeholder{
+    color: transparent;
+    
+  }
+}

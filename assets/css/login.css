@@ -49,3 +49,17 @@ main {
   font-weight: 600;
   text-decoration: none;
 }
+
+/*Mobile*/
+@media screen and (max-width: 767px) {
+.login__email,
+.login__senha {
+  width: 330px;
+}
+
+.login__btn {
+  
+  width: 349px;
+ 
+}
+}

@@ -5,7 +5,6 @@ main {
 .produto {
 
     display: flex;
-    
     padding: 64px 4% 0 4%;
     margin: 0 0 64px 0;
 }
@@ -54,4 +53,58 @@ main {
 
 .produtos__galeria {
     margin: 0 0 64px 0;
+}
+
+/*Mobile*/
+@media screen and (max-width: 767px) {
+    .produto {
+        flex-direction: column;
+        margin: 0 0 28px 0;
+    }
+
+    .produto__img{
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .produto__descricao_titulo {
+        font-size: 22px;
+        width: 100%;
+    }
+
+    .produto__descricao_preco {
+        font-size: 16px;
+        
+    }
+
+    .produto__descricao_texto {
+        font-size: 14px;
+        width: 325px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .produtos__galeria {
+        margin: 0;
+    }
+
+    .produtos__vertudo_seta {
+        height: 14px;
+        align-self: center;
+        justify-content: center;
+        width: 14px;
+    }
+
+
+.produtos__titulo_texto_produto {
+    font-size: 22px;
+}
+
+.produtos__vertudo {
+    font-size: 14px;
+}
 }

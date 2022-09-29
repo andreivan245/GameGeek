@@ -168,3 +168,56 @@ main {
 .Produto__conteudo_img {
   display: none;
 }
+
+
+/*Mobile*/
+@media screen and (max-width: 767px) {
+
+  .adiciona {
+    margin: 92px;
+  }
+  .adiciona__conteudo_nome,
+  .adiciona__conteudo_preco,
+  .adiciona__conteudo_categoria,
+  .adiciona__conteudo_textoDescricao,
+  .adiciona__conteudo_bota,.adiciona__conteudo_botao{
+  
+  width: 360px;
+}
+
+.adiciona__conteudo_nome_input,
+.adiciona__conteudo_preco_input {
+  width: 345px;
+}
+
+#adiciona__conteudo_categoriaSelect {
+  
+  width: 351px;
+}
+
+.adiciona__conteudo_textoDescricao_input {
+  width: 345px;
+}
+  
+#adiciona__conteudo_drop {
+  display: none;
+}
+
+.adiciona__conteudo_drop_ou {
+  display: none;
+}
+.adiciona__conteudo_input {
+  justify-content: center;
+  align-self: center;
+  margin: 2em 0;
+  width: 360px;
+}
+
+.adiciona__conteudo_drop_label{
+  font-size: 12px;
+}
+
+.adiciona__conteudo_titulo {
+  width: 360px;
+}
+}

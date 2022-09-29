@@ -11,6 +11,7 @@ main {
 }
 
 .todosProdutos__conteudo_topo {
+  align-items: center;
   display: flex;
   justify-content: space-between;
   padding: 0 4%;
@@ -106,4 +107,23 @@ main {
   margin-top: 11px;
   margin-right: 11px;
   width: 18px;
+}
+
+
+/*Mobile*/
+@media screen and (max-width: 767px) {
+  .todosProdutos__conteudo_produtos_item {
+    
+    margin: 6px 10px;
+    height: 232px;
+    width: 146px;
+  }
+
+  .todosProdutos__conteudo_produtos_itemImg {
+    width: 146px;
+    height: 144px;
+  
+    
+  }
+
 }

@@ -100,4 +100,17 @@
   padding: 0 1%;
   
 }
+
+.produtos__galeria_item {
+  margin: 8px 15.25px;
+  height: 232px;
+  width: 146px;
+}
+
+.produtos__galeria_img {
+  width: 146px;
+  height: 144px;
+}
+
+
 }
