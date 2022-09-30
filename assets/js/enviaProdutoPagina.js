@@ -29,13 +29,11 @@ function produtoPesquisaSelecionado(pagina) {
           
       );
 
-      if (pagina == "index") {
-        window.location.href = "./assets/pages/produto.html";
-      } 
+      
       if (pagina == "todosProdutos" || pagina == "login" || pagina == "adicionaProduto" ) {
         window.location.href = "../pages/produto.html";
       }else {
-        location.reload(true);
+        window.location.href = "./assets/pages/produto.html";
       }
     });
   }
