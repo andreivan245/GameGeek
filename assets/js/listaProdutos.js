@@ -1,3 +1,4 @@
+//funçao que insere alguns produtos padroes no localstorage
 function listaProdutos() {
   let produtos = [
     {
@@ -157,5 +158,4 @@ function listaProdutos() {
 
   localStorage.setItem("quantidadeProdutos", i);
   localStorage.setItem("NomeSelecionado", "0");
-  
 }

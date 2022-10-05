@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AluraGeek</title>
+    <title>GameGeek</title>
+    <link rel="icon" type="imagem/png" href="./assets/img/icon.png"/>
 
 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&amp;display=swap" rel="stylesheet">
@@ -16,26 +17,28 @@
     <link rel="stylesheet" href="./assets/css/banner.css">
     <link rel="stylesheet" href="./assets/css/produtos.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
-      
+
 </head>
 
-<body onload="listaProdutos(),chamaProdutosIndex(), produtoSelecionado('index'), listaPesquisa(), produtoPesquisaSelecionado('index')" >
+<body
+    onload="listaProdutos(),chamaProdutosIndex(), produtoSelecionado('index'), listaPesquisa(), produtoPesquisaSelecionado('index')">
     <header>
         <div class="cabecalho">
             <div class="cabecalho__direita">
                 <a href="./index.html"><img class="cabecalho__logo" src="./assets/img/Logo.png"
-                    alt="logo da alurageek"></a>
-                    <div class="cabecalho__direita_pesquisa">
-                
-                        <div class="cabecalho__pesquisa">
-                            <input type="text" class="cabecalho__pesquisa_barra" onkeyup="barraPesquisa()" placeholder="O que deseja encontrar?">
-                            <img src="./assets/img/Lupa.png" alt="" class="cabecalho__pesquisa_img">
-                        </div>
-                        
+                        alt="logo da alurageek"></a>
+                <div class="cabecalho__direita_pesquisa">
+
+                    <div class="cabecalho__pesquisa">
+                        <input type="text" class="cabecalho__pesquisa_barra" onkeyup="barraPesquisa()"
+                            placeholder="O que deseja encontrar?">
+                        <img src="./assets/img/Lupa.png" alt="" class="cabecalho__pesquisa_img">
                     </div>
+
+                </div>
             </div>
-            
-            
+
+
 
             <button class="cabecalho__login_btn"><a href="./assets/pages/login.html"
                     class="cabecalho__login_botao">Login</a></button>
@@ -49,7 +52,8 @@
             <div class="banner__conteudo">
                 <h2 class="banner__conteudo_titulo">Dezembro Promocional</h2>
                 <h3 class="banner__conteudo_subtitulo">Produtos selecionados com 33% de desconto</h3>
-                <button class="banner__conteudo_btn"><a href="#console" class="banner__conteudo_botao">Ver Consoles</a></button>
+                <button class="banner__conteudo_btn"><a href="#console" class="banner__conteudo_botao">Ver
+                        Consoles</a></button>
             </div>
 
         </div>
@@ -57,46 +61,46 @@
         <div class="produtos">
             <div class="produtos__titulo">
                 <h2 class="produtos__titulo_texto">Star Wars</h2>
-                <a href="./assets/pages/todosProdutos.html" class="produtos__vertudo">Ver tudo <img src="./assets/img/seta.png" alt=""
-                        class="produtos__vertudo_seta"></a>
+                <a href="./assets/pages/todosProdutos.html" class="produtos__vertudo">Ver tudo <img
+                        src="./assets/img/seta.png" alt="" class="produtos__vertudo_seta"></a>
             </div>
             <div class="produtos__galeria">
                 <ul class="produtos__galeria_listaStarWars">
-                   
+
                 </ul>
             </div>
 
             <div class="produtos__titulo">
                 <h2 class="produtos__titulo_texto" id="console">Console</h2>
-                <a href="./assets/pages/todosProdutos.html" class="produtos__vertudo">Ver tudo <img src="./assets/img/seta.png" alt=""
-                        class="produtos__vertudo_seta"></a>
+                <a href="./assets/pages/todosProdutos.html" class="produtos__vertudo">Ver tudo <img
+                        src="./assets/img/seta.png" alt="" class="produtos__vertudo_seta"></a>
             </div>
             <div class="produtos__galeria">
                 <ul class="produtos__galeria_listaConsoles">
-                    
+
                 </ul>
             </div>
 
             <div class="produtos__titulo">
                 <h2 class="produtos__titulo_texto">Diversos</h2>
-                <a href="./assets/pages/todosProdutos.html" class="produtos__vertudo">Ver tudo <img src="./assets/img/seta.png" alt=""
-                        class="produtos__vertudo_seta"></a>
+                <a href="./assets/pages/todosProdutos.html" class="produtos__vertudo">Ver tudo <img
+                        src="./assets/img/seta.png" alt="" class="produtos__vertudo_seta"></a>
             </div>
             <div class="produtos__galeria">
                 <ul class="produtos__galeria_listaDiversos">
-                    
+
                 </ul>
             </div>
 
-            
+
             <div class="produtos__tituloNovos">
                 <h2 class="produtos__titulo_texto">Novos</h2>
-                <a href="./assets/pages/todosProdutos.html" class="produtos__vertudo">Ver tudo <img src="./assets/img/seta.png" alt=""
-                        class="produtos__vertudo_seta"></a>
+                <a href="./assets/pages/todosProdutos.html" class="produtos__vertudo">Ver tudo <img
+                        src="./assets/img/seta.png" alt="" class="produtos__vertudo_seta"></a>
             </div>
             <div class="produtos__galeriaNovos">
                 <ul class="produtos__galeria_listaNovos">
-                   
+
                 </ul>
             </div>
 
@@ -142,13 +146,13 @@
             <h3 class="rodape__creditos">2022</h3>
         </div>
     </footer>
-    
+
 </body>
 
-    <script  type="text/javascript" src="./assets/js/listaProdutos.js"></script>
-    <script  type="text/javascript" src="./assets/js/carregarProdutosIndex.js" ></script>
-    <script  type="text/javascript" src="./assets/js/enviaProdutoPagina.js"></script>
-    <script  type="text/javascript" src="./assets/js/barraPesquisa.js"></script>
+<script type="text/javascript" src="./assets/js/listaProdutos.js"></script>
+<script type="text/javascript" src="./assets/js/carregarProdutosIndex.js"></script>
+<script type="text/javascript" src="./assets/js/enviaProdutoPagina.js"></script>
+<script type="text/javascript" src="./assets/js/barraPesquisa.js"></script>
 
 
 

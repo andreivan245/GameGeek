@@ -1,8 +1,10 @@
+/* contem todo o css do banner da pagina principal */
+
 .banner {
+  align-items: flex-end;
   background: url(../img/banner-image.png) no-repeat center;
   background-size: cover;
   display: flex;
-  align-items: flex-end;
   height: 352px;
 }
 
@@ -25,7 +27,7 @@
 }
 
 .banner__conteudo_btn {
-  background: #2a7ae4;
+  background: #7e21ce;
   border-style: none;
   height: 51px;
   width: 130px;
@@ -36,28 +38,23 @@
   text-decoration: none;
 }
 
+/*SMALL VIEWPORTS*/
 
-/*Mobile*/
 @media screen and (max-width: 767px) {
   .banner{
+    align-items: flex-end;
     width: 100%;
-    align-items: flex-end
   }
 
   .banner__conteudo_titulo {
-    
     font-size: 22px;
-    
   }
   
   .banner__conteudo_subtitulo {
-    
     font-size: 14px;
-    
   }
 
   .banner__conteudo_btn {
-    
     width: 119px;
   }
 

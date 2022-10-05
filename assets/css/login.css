@@ -1,12 +1,15 @@
+/* contem o css da pagina de login */
+
 main {
   background: #e5e5e5;
 }
+
 .login {
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: 291px;
+  justify-content: space-between;
   margin: 92px 0;
 }
 
@@ -36,11 +39,11 @@ main {
 }
 
 .login__btn {
-  background: #2a7ae4;
+  background: #7e21ce;
   border: none;
   height: 62px;
-  width: 441px;
   padding: 0;
+  width: 441px;
 }
 
 .login__botao {
@@ -50,16 +53,15 @@ main {
   text-decoration: none;
 }
 
-/*Mobile*/
-@media screen and (max-width: 767px) {
-.login__email,
-.login__senha {
-  width: 330px;
-}
+/*SMALL VIEWPORTS*/
 
-.login__btn {
-  
-  width: 349px;
- 
-}
+@media screen and (max-width: 767px) {
+  .login__email,
+  .login__senha {
+    width: 330px;
+  }
+
+  .login__btn {
+    width: 349px;
+  }
 }

@@ -1,18 +1,21 @@
+/* contem o css do footer presente em todas a paginas */
+
 .footer {
-  background: #eaf2fd;
+  background: #f6edff;
 }
 
 .footer__conteudo {
   display: flex;
-  padding: 64px 4%;
-  justify-content: space-between;
   height: 240px;
+  justify-content: space-between;
+  padding: 64px 4%;
 }
 
 .footer__img {
   height: 50px;
   width: 176px;
 }
+
 .footer__lista {
   display: flex;
   flex-direction: column;
@@ -42,11 +45,10 @@
 
 .footer_faleconosco_nome {
   background: #ffffff;
-  border-bottom: 1px solid #C8C8C8;
+  border-bottom: 1px solid #c8c8c8;
   border-radius: 4px;
   height: 56px;
   margin-bottom: 16px;
-  
 }
 
 .footer_faleconosco_nome_titulo {
@@ -66,7 +68,7 @@
 
 .footer__faleconosco_msg {
   background: #ffffff;
-  border-bottom: 1px solid #C8C8C8;
+  border-bottom: 1px solid #c8c8c8;
   border-radius: 4px;
   height: 82px;
   margin-bottom: 8px;
@@ -85,11 +87,10 @@
   margin: 0 0 1em 0.6em;
   outline: 0;
   width: 530px;
-  
 }
 
 .footer__faleconosco_btn {
-  background: #2a7ae4;
+  background: #7e21ce;
   border: none;
   height: 51px;
   width: 165px;
@@ -103,6 +104,7 @@
   justify-content: center;
   height: 100px;
 }
+
 .rodape__creditos {
   color: #464646;
   font-size: 16px;
@@ -115,25 +117,47 @@
   text-decoration: none;
 }
 
-/*Mobile*/
+/*SMALL VIEWPORTS*/
+
 @media screen and (max-width: 767px) {
   .footer__conteudo {
+    align-items: center;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     margin: 0;
     padding: 1em 0;
     height: 100%;
   }
 
-  .footer__faleconosco,.footer__faleconosco_nome_input,.footer__faleconosco_msg_input {
-
+  .footer__faleconosco,
+  .footer__faleconosco_nome_input,
+  .footer__faleconosco_msg_input {
     width: 92%;
   }
 
-  .footer__lista_item{
+  .footer__lista_item {
     margin-bottom: 1em;
   }
+}
 
-  
+/*MEDIUM VIEWPORTS*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .footer__conteudo {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 2em 0;
+    height: 100%;
+  }
+
+  .footer__faleconosco,
+  .footer__faleconosco_nome_input,
+  .footer__faleconosco_msg_input {
+    width: 92%;
+  }
+
+  .footer__lista_item {
+    margin-bottom: 1em;
+  }
 }

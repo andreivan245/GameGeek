@@ -1,3 +1,6 @@
+//funçoes para os elementos de adicionar imagem
+
+//funçao para o elemento de arrasta e solta
 function arrastaSolta() {
   const image_drop_area = document.querySelector("#adiciona__conteudo_drop");
   var imagem_carregada;
@@ -16,6 +19,7 @@ function arrastaSolta() {
     readImage(fileList[0]);
   });
 
+  //funçao para a leitura da imagem do elemento arrasta e solta
   readImage = (arquivo) => {
     const reader = new FileReader();
     reader.addEventListener("load", (event) => {
@@ -45,6 +49,7 @@ function arrastaSolta() {
   };
 }
 
+//funçao para a leitura da imagem do input file
 function inputImagem() {
   const arquivoImagem = document.querySelector("#fileInput");
   arquivoImagem.addEventListener("change", function (evt) {

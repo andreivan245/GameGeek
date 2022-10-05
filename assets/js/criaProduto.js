@@ -1,3 +1,6 @@
+//funçoes relacionadas a criaçao do produto
+
+//funçao para a criaçao de um novo produto
 function criaProduto() {
   var qtdProdutos = parseInt(localStorage.getItem("quantidadeProdutos"));
   bannerImage = document.getElementById("Produto__conteudo_img");
@@ -32,6 +35,7 @@ function criaProduto() {
   location.reload(true);
 }
 
+//funçao para converter a imagem para a base64 para que a mesma possa ser armazenada no local strorage
 function getBase64Image(img) {
   var canvas = document.createElement("canvas");
 

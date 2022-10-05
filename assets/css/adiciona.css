@@ -1,3 +1,5 @@
+/*contem todo o css da pagina de adicionar produtos*/
+
 main {
   background: #e5e5e5;
 }
@@ -60,8 +62,8 @@ main {
 
 .adiciona__conteudo_drop_label {
   align-items: center;
-  border: 1px solid #2a7ae4;
-  color: #2a7ae4;
+  border: 1px solid #7e21ce;
+  color: #7e21ce;
   cursor: pointer;
   display: flex;
   font-size: 16px;
@@ -119,8 +121,8 @@ main {
 }
 
 #adiciona__conteudo_categoriaSelect {
-  margin: 0.5em 0 0 0.5em;
   border: 0;
+  margin: 0.5em 0 0 0.5em;
   width: 540px;
 }
 
@@ -157,7 +159,7 @@ main {
 }
 
 .adiciona__conteudo_botao {
-  background: #2a7ae4;
+  background: #7e21ce;
   border: none;
   color: #ffffff;
   font-size: 16px;
@@ -170,9 +172,9 @@ main {
 }
 
 
-/*Mobile*/
-@media screen and (max-width: 767px) {
+/*SMALL VIEWPORTS*/
 
+@media screen and (max-width: 767px) {
   .adiciona {
     margin: 92px;
   }
@@ -180,44 +182,43 @@ main {
   .adiciona__conteudo_preco,
   .adiciona__conteudo_categoria,
   .adiciona__conteudo_textoDescricao,
-  .adiciona__conteudo_bota,.adiciona__conteudo_botao{
-  
-  width: 360px;
-}
+  .adiciona__conteudo_bota,
+  .adiciona__conteudo_botao {
+    width: 360px;
+  }
 
-.adiciona__conteudo_nome_input,
-.adiciona__conteudo_preco_input {
-  width: 345px;
-}
+  .adiciona__conteudo_nome_input,
+  .adiciona__conteudo_preco_input {
+    width: 345px;
+  }
 
-#adiciona__conteudo_categoriaSelect {
-  
-  width: 351px;
-}
+  #adiciona__conteudo_categoriaSelect {
+    width: 351px;
+  }
 
-.adiciona__conteudo_textoDescricao_input {
-  width: 345px;
-}
-  
-#adiciona__conteudo_drop {
-  display: none;
-}
+  .adiciona__conteudo_textoDescricao_input {
+    width: 345px;
+  }
 
-.adiciona__conteudo_drop_ou {
-  display: none;
-}
-.adiciona__conteudo_input {
-  justify-content: center;
-  align-self: center;
-  margin: 2em 0;
-  width: 360px;
-}
+  #adiciona__conteudo_drop {
+    display: none;
+  }
 
-.adiciona__conteudo_drop_label{
-  font-size: 12px;
-}
+  .adiciona__conteudo_drop_ou {
+    display: none;
+  }
+  .adiciona__conteudo_input {
+    align-self: center;
+    justify-content: center;
+    margin: 2em 0;
+    width: 360px;
+  }
 
-.adiciona__conteudo_titulo {
-  width: 360px;
-}
+  .adiciona__conteudo_drop_label {
+    font-size: 12px;
+  }
+
+  .adiciona__conteudo_titulo {
+    width: 360px;
+  }
 }

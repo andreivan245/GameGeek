@@ -1,3 +1,6 @@
+//funções relacionadas a exibiçao do produto na pagina do mesmo
+
+//funçao para saber qual produto foi selecionado
 function produtoSelecionado(pagina) {
   var clicado = document.querySelectorAll(".produtos__galeria_link");
   for (var i = 0; i < clicado.length; i++) {
@@ -18,27 +21,28 @@ function produtoSelecionado(pagina) {
   }
 }
 
+//funçao que vai para a pagina do produto de acordo em qual pagina ele esta atualmente
 function produtoPesquisaSelecionado(pagina) {
   var clicado = document.querySelectorAll(".produtos__pesquisa_link");
   for (var i = 0; i < clicado.length; i++) {
     clicado[i].addEventListener("click", function (e) {
       e.preventDefault();
-      localStorage.setItem(
-        "NomeSelecionado",
-        e.target.textContent
-          
-      );
+      localStorage.setItem("NomeSelecionado", e.target.textContent);
 
-      
-      if (pagina == "todosProdutos" || pagina == "login" || pagina == "adicionaProduto" ) {
+      if (
+        pagina == "todosProdutos" ||
+        pagina == "login" ||
+        pagina == "adicionaProduto"
+      ) {
         window.location.href = "../pages/produto.html";
-      }else {
+      } else {
         window.location.href = "./assets/pages/produto.html";
       }
     });
   }
 }
 
+//funçao para carregar todos os produtos que estão na mesma categoria do produto selecionado
 function produtoSimilar(produto) {
   for (i = 0; i < localStorage.length; i++) {
     if (
@@ -97,6 +101,7 @@ function produtoSimilar(produto) {
   }
 }
 
+//funçao que carrega os dados do produto na pagina do produto
 function produtoVitrine() {
   for (i = 0; i < localStorage.length; i++) {
     if (

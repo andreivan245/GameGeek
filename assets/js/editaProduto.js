@@ -1,3 +1,6 @@
+//funcoes relacionadas a ediçao do produto
+
+//funçao para saber qual produto foi selecionado e carrega os dados desse produto na pagina que edita produtos
 function editaProduto() {
   var clicado = document.querySelectorAll(
     ".todosProdutos__conteudo_produtos_itemImgLapis"
@@ -30,6 +33,7 @@ function editaProduto() {
   }
 }
 
+//funçao que edita o produto selecionado e confirma as mudanças
 function editandoProduto() {
   for (i = 0; i < localStorage.length; i++) {
     if (

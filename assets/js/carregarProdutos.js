@@ -1,3 +1,5 @@
+//funçao que que busca e adiciona todos os produtos na pagina de todos os produtos
+
 function chamaProdutos() {
   for (i = 0; i < localStorage.length; i++) {
     if (

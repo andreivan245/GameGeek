@@ -1,3 +1,5 @@
+//funçao que adiciona todos os produtos a pagina principal de acordo com sua categoria
+
 function chamaProdutosIndex() {
   for (i = 0; i < localStorage.length; i++) {
     if (
